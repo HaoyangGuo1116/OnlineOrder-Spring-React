@@ -24,7 +24,7 @@ public class HelloController {
         String bookTitle = faker.book().title();
         String bookAuthor = faker.book().author();
 
-        String template = "This is %s. I work at %s. I live at %s in %s %s. My favorite book is %s by %s.";
+        //String template = "This is %s. I work at %s. I live at %s in %s %s. My favorite book is %s by %s.";
         return new Person(name, company, new Address(street, city, state, null ), new Book(bookTitle, bookAuthor));
 
     }
